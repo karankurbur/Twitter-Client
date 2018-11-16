@@ -1,0 +1,56 @@
+.card-image {
+    /* float: left;
+    width: 40%;
+    height: 250px; */
+  }
+
+  .right-content {
+    /* //padding:15px; */
+  }
+  .card-title {
+    /* padding-left: 20px; */
+  }
+  
+
+  .card{
+    padding: 8px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #1DA1F2;
+    border-width: 5px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+.inputs{
+  width:50%;
+  height: auto;
+  margin: auto;
+  padding: auto;
+} 
+
+  .logo{
+    width:50%;
+    margin: auto;
+  }
+
+  h1{
+    float: right;
+  }
+
+  .error{
+    float: left;
+    font-size: 30px;
+    color: red;
+    /* visibility: hidden; */
+
+    /* padding:auto */
+  }
+  
+  p{ 
+    font-size: 25px; 
+
+  }

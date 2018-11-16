@@ -1,0 +1,33 @@
+<head>
+  <link rel="icon" href="https://ubisafe.org/images/transparent-twitter-favicon-4.png">
+</head>
+
+
+<div class="logo">
+  <img src="http://www.jerseysmarts.com/wp-content/uploads/2011/03/twitter-banner.jpg">
+</div>
+
+
+
+<div class="inputs">
+  <input id="hashtags" type="text" [(ngModel)]="userquery" [ngModelOptions]="{standalone: true}">
+  <button class="waves-effect waves-light btn" (click)="usercall()"> Search Handle</button>
+  <br>
+  <br>
+  <input id="hashtags" type="text" [(ngModel)]="filter" [ngModelOptions]="{standalone: true}">
+  <button class="waves-effect waves-light btn" (click)="searchTweets()"> Filter Tweets</button>
+  <br>
+  <div class="error" [style.visibility]="getStyle()">No search results found.</div>
+</div>
+
+<br>
+<div *ngFor="let item of tweetsdataFiltered">
+  <div class="card">
+    <img src={{item.user.profile_image_url}} width="85px" height="85px">
+    <h1>
+      <span class="card-title">{{item.user.name}}
+      </span>
+    </h1>
+    <p>{{item.retweeted_status == null ? item.full_text : item.retweeted_status.full_text}}</p>
+  </div>
+</div>
